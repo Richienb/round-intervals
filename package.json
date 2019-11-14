@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "round-intervals",
     "version": "0.0.0",
     "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "repository": "https://github.com/Richienb/round-intervals.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,13 +11,17 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "math",
+        "round",
+        "intervals"
+    ],
     "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",

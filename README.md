@@ -1,41 +1,42 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Round intervals [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-intervals/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-intervals)
 
-My awesome module.
+Round a number to the closest interval.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/round-intervals.png)](https://npmjs.com/package/round-intervals)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install round-intervals
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const roundIntervals = require("round-intervals");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+roundIntervals(1, 5);
+//=> 0
+
+roundIntervals(4, 5);
+//=> 5
+
+roundIntervals(8, 5);
+//=> 10
 ```
 
 ## API
 
-### theModule(input, options?)
+### roundIntervals(number, intervals)
 
-#### input
+#### number
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
+The number to round.
 
-#### options
+#### intervals
 
-Type: `object`
+Type: `number`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The intervals to use.

@@ -1,13 +1,10 @@
 import test from "ava"
-import theModule from "."
+import roundIntervals from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
+    t.is(roundIntervals(1, 5), 0)
 
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.is(roundIntervals(4, 5), 5)
+
+    t.is(roundIntervals(8, 5), 10)
 })
