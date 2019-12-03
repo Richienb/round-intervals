@@ -1,6 +1,6 @@
 {
     "name": "round-intervals",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Round a number to the closest interval.",
     "repository": "https://github.com/Richienb/round-intervals.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
