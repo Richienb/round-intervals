@@ -23,11 +23,33 @@ roundIntervals(4, 5)
 
 roundIntervals(8, 5)
 //=> 10
+
+roundIntervals.up(1, 5)
+//=> 5
+
+roundIntervals.up(4, 5)
+//=> 5
+
+roundIntervals.down(1, 5)
+//=> 0
+
+roundIntervals.down(4, 5)
+//=> 0
 ```
 
 ## API
 
 ### roundIntervals(number, intervals)
+
+Round `number` to the nearest `interval`.
+
+### roundIntervals.up(number, intervals)
+
+Round `number` up to the nearest `interval`.
+
+### roundIntervals.down(number, intervals)
+
+Round `number` down to the nearest `interval`.
 
 #### number
 
