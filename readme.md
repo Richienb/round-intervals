@@ -13,15 +13,15 @@ npm install round-intervals
 ## Usage
 
 ```js
-const roundIntervals = require("round-intervals");
+const roundIntervals = require("round-intervals")
 
-roundIntervals(1, 5);
+roundIntervals(1, 5)
 //=> 0
 
-roundIntervals(4, 5);
+roundIntervals(4, 5)
 //=> 5
 
-roundIntervals(8, 5);
+roundIntervals(8, 5)
 //=> 10
 ```
 
@@ -39,4 +39,4 @@ The number to round.
 
 Type: `number`
 
-The intervals to use.
+The intervals to round to.

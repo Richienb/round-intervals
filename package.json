@@ -15,7 +15,7 @@
     },
     "scripts": {
         "lint": "xo",
-        "test": "yarn lint && ava"
+        "test": "xo && ava"
     },
     "keywords": [
         "math",
@@ -24,14 +24,11 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "ava": "^2.1.0",
-        "eslint-config-richienb": "^0.2.2",
-        "xo": "^0.25.3"
-    },
-    "resolutions": {
-        "eslint": "^6.6.0"
+        "ava": "^3.12.1",
+        "eslint-config-richienb": "^0.5.0",
+        "xo": "^0.33.1"
     },
     "xo": {
-        "extends": "richienb/node"
+        "extends": "richienb"
     }
 }
