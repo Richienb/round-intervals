@@ -1,13 +1,14 @@
 "use strict"
 
-const roundIntervals = (method, number, intervals) => {
-	if (typeof number !== "number") {
-		throw new TypeError(`Expected a number, got ${typeof number}`)
+const assertNumber = value => {
+	if (typeof value !== "number") {
+		throw new TypeError(`Expected a number, got ${typeof value}`)
 	}
+}
 
-	if (typeof intervals !== "number") {
-		throw new TypeError(`Expected a number, got ${typeof intervals}`)
-	}
+const roundIntervals = (method, number, intervals) => {
+	assertNumber(number)
+	assertNumber(intervals)
 
 	return Math[method](number / intervals) * intervals
 }
