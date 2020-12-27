@@ -1,4 +1,4 @@
-# Round intervals [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-intervals/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-intervals)
+# round-intervals [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-intervals/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-intervals)
 
 Round a number to the closest interval.
 
