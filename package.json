@@ -2,33 +2,32 @@
     "name": "round-intervals",
     "version": "1.1.0",
     "description": "Round a number to the closest interval.",
-    "repository": "https://github.com/Richienb/round-intervals.git",
-    "author": "Richie Bendall <richiebendall@gmail.com>",
+    "repository": "Richienb/round-intervals",
+	"author": {
+		"name": "Richie Bendall",
+		"email": "richiebendall@gmail.com"
+	},
     "license": "MIT",
-    "main": "index.js",
+	"type": "module",
+	"exports": "./index.js",
     "files": [
         "index.js",
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=4"
+        "node": ">=12"
     },
     "scripts": {
-        "lint": "xo",
-        "test": "xo && ava"
+        "test": "xo && ava && tsd"
     },
     "keywords": [
         "math",
         "round",
         "intervals"
     ],
-    "dependencies": {},
     "devDependencies": {
-        "ava": "^3.12.1",
-        "eslint-config-richienb": "^0.5.0",
-        "xo": "^0.33.1"
-    },
-    "xo": {
-        "extends": "richienb"
+        "ava": "^3.15.0",
+        "tsd": "^0.17.0",
+        "xo": "^0.44.0"
     }
 }

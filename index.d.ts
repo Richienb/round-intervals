@@ -1,57 +1,59 @@
-declare const roundIntervals: {
-	/**
-	Round `number` up to the nearest `interval`.
-	@param number The number to round.
-	@param intervals The intervals to round to.
-	@example
-	```
-	const roundIntervals = require("round-intervals")
+/**
+Round `number` to the nearest `interval`.
 
-	roundIntervals.up(1, 5)
-	//=> 5
+@param number The number to round.
+@param intervals The intervals to round to.
 
-	roundIntervals.up(4, 5)
-	//=> 5
-	```
-	*/
-	up: (number: number, intervals: number) => number
+@example
+```
+import roundIntervals from 'round-intervals';
 
-	/**
-	Round `number` down to the nearest `interval`.
-	@param number The number to round.
-	@param intervals The intervals to round to.
-	@example
-	```
-	const roundIntervals = require("round-intervals")
+roundIntervals(1, 5);
+//=> 0
 
-	roundIntervals.down(1, 5)
-	//=> 0
+roundIntervals(4, 5);
+//=> 5
 
-	roundIntervals.down(4, 5)
-	//=> 0
-	```
-	*/
-	down: (number: number, intervals: number) => number
+roundIntervals(8, 5);
+//=> 10
+```
+*/
+export default function roundIntervals(number: number, intervals: number): number;
 
-	/**
-    Round `number` to the nearest `interval`.
-    @param number The number to round.
-    @param intervals The intervals to round to.
-    @example
-    ```
-    const roundIntervals = require("round-intervals")
+/**
+Round `number` up to the nearest `interval`.
 
-    roundIntervals(1, 5)
-    //=> 0
+@param number The number to round.
+@param intervals The intervals to round to.
 
-    roundIntervals(4, 5)
-    //=> 5
+@example
+```
+import {roundIntervalsUp} from 'round-intervals';
 
-    roundIntervals(8, 5)
-    //=> 10
-    ```
-    */
-	(number: number, intervals: number): number
-}
+roundIntervalsUp(1, 5);
+//=> 5
 
-export = roundIntervals
+roundIntervalsUp(4, 5);
+//=> 5
+```
+*/
+export function roundIntervalsUp(number: number, intervals: number): number;
+
+/**
+Round `number` down to the nearest `interval`.
+
+@param number The number to round.
+@param intervals The intervals to round to.
+
+@example
+```
+import {roundIntervalsDown} from 'round-intervals';
+
+roundIntervalsDown(1, 5);
+//=> 0
+
+roundIntervalsDown(4, 5);
+//=> 0
+```
+*/
+export function roundIntervalsDown(number: number, intervals: number): number;

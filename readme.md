@@ -1,8 +1,6 @@
-# round-intervals [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-intervals/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-intervals)
+# round-intervals
 
 Round a number to the closest interval.
-
-[![NPM Badge](https://nodei.co/npm/round-intervals.png)](https://npmjs.com/package/round-intervals)
 
 ## Install
 
@@ -13,27 +11,27 @@ npm install round-intervals
 ## Usage
 
 ```js
-const roundIntervals = require("round-intervals")
+import roundIntervals, {roundIntervalsUp, roundIntervalsDown} from 'round-intervals';
 
-roundIntervals(1, 5)
+roundIntervals(1, 5);
 //=> 0
 
-roundIntervals(4, 5)
+roundIntervals(4, 5);
 //=> 5
 
-roundIntervals(8, 5)
+roundIntervals(8, 5);
 //=> 10
 
-roundIntervals.up(1, 5)
+roundIntervalsUp(1, 5);
 //=> 5
 
-roundIntervals.up(4, 5)
+roundIntervalsUp(4, 5);
 //=> 5
 
-roundIntervals.down(1, 5)
+roundIntervalsDown(1, 5);
 //=> 0
 
-roundIntervals.down(4, 5)
+roundIntervalsDown(4, 5);
 //=> 0
 ```
 
@@ -43,11 +41,11 @@ roundIntervals.down(4, 5)
 
 Round `number` to the nearest `interval`.
 
-### roundIntervals.up(number, intervals)
+### roundIntervalsUp(number, intervals)
 
 Round `number` up to the nearest `interval`.
 
-### roundIntervals.down(number, intervals)
+### roundIntervalsDown(number, intervals)
 
 Round `number` down to the nearest `interval`.
 
